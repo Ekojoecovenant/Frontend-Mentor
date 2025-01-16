@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Figtree';
-    src: url(./assets/fonts/static/Figtree-Medium.ttf) format('truetype');
+    src: url(./assets/fonts/Figtree-Medium.ttf) format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Figtree';
-    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+    src: url(./assets/fonts/Figtree-ExtraBold.ttf) format('truetype');
     font-weight: 800;
     font-style: normal;
 }
@@ -36,19 +36,19 @@ body {
     max-width: 400px;
     background-color: hsl(0, 0%, 100%);
     width: 80%;
-    height: 600px;
+    max-height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid hsl(0, 0%, 40%);
     border-radius: 20px;
+    box-shadow: 10px 10px;
 }
 
 .main {
     width: 90%;
     height: 100%;
-    /* margin: 20px; */
 }
 
 .BlogImg {
@@ -75,12 +75,26 @@ h1 {
 .title {
     font-weight: 800;
     font-size: 25px;
-    /* padding: 0px; */
 }
 
 .details {
     margin: 20px 0;
     line-height: 1.5;
     color: hsl(0, 0%, 42%);
-    /* padding: 2px; */
+}
+
+.author {
+    height: 35px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.author img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.author-name {
+    margin: auto 0;
+    font-weight: 800;
 }
