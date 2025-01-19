@@ -98,7 +98,7 @@ h1 {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 900;
     padding-bottom: 5px;
     color: hsl(223, 47%, 23%);
@@ -113,7 +113,7 @@ h2 {
 
 a {
     justify-self: right;
-    font-size: 14px;
+    font-size: 12px;
     color: hsl(245, 75%, 52%);
 }
 
