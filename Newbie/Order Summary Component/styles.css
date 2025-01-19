@@ -23,6 +23,9 @@ body {
     min-height: 100vh;
     background-color: hsl(225, 100%, 94%);
     font-family: RedHat;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .parent {
@@ -57,13 +60,16 @@ h1 {
     font-weight: 900;
     font-size: 25px;
     margin: 10px 0;
+    color: hsl(223, 47%, 23%);
 }
 
 .text {
     text-align: center;
     margin: 10px 10px;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+
 }
 
 .subscribe {
@@ -92,21 +98,30 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 900;
+    padding-bottom: 5px;
+    color: hsl(223, 47%, 23%);
 }
 
 .price {
-    font-weight: 500;
-
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
 }
 
 
 a {
     justify-self: right;
-    /* font-size: 2px; */
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
 }
+
+a:active {
+    color: hsl(245, 75%, 62%);
+    text-decoration: none;
+}
+
 
 button {
     width: 100%;
@@ -117,4 +132,30 @@ button {
     font-weight: 900;
     font-size: 14px;
     margin: 5px 0;
+    cursor: pointer;
+}
+
+.paybtn {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+}
+
+.paybtn:active {
+    background-color: hsl(245, 75%, 67%);
+    ;
+}
+
+.cancelbtn {
+    background-color: unset;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancelbtn:active {
+    color: hsl(224, 23%, 25%);
+}
+
+@media (max-width: 720px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
 }
