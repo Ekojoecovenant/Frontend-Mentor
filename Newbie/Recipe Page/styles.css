@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/Outfit-VariableFont_wght.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Young';
+    src: url(./assets/fonts/YoungSerif-Regular.ttf) format('truetype');
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 100%, 92%);
+    font-family: Young;
+}
+
+.main {
+    max-width: 100%;
+    width: 550px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px 0;
+}
+
+.main * {
+    width: 90%;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    box-sizing: border-box;
+    padding: 20px 0 20px 30px;
+    margin: 20px 0 10px 0;
+    border-radius: 10px;
+}
+
+
+.text,
+h3,
+strong {
+    font-family: Outfit;
+    font-size: 14px;
+}
+
+.text {
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+hr {
+    margin-top: 20px;
+    border: .1px solid hsl(30, 54%, 90%);
+}
