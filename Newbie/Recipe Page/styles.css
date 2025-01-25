@@ -22,7 +22,7 @@ body {
 
 .main {
     max-width: 100%;
-    width: 550px;
+    width: 650px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -60,6 +60,7 @@ h1 {
 
 h2 {
     font-size: 20px;
+    color: hsl(14, 45%, 36%);
 }
 
 
@@ -77,6 +78,7 @@ h3,
 strong {
     font-family: Outfit;
     font-size: 14px;
+    line-height: 24px;
 }
 
 .text {
@@ -85,13 +87,64 @@ strong {
 
 strong {
     font-weight: 600;
+    color: hsl(24, 5%, 18%);
 }
 
 h3 {
     font-weight: 700;
+    color: hsl(332, 51%, 32%);
 }
 
 hr {
     margin-top: 20px;
     border: .1px solid hsl(30, 54%, 90%);
+}
+
+.table {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.table hr {
+    margin: 10px 0;
+
+}
+
+.table span {
+    /* border-bottom: .1px solid hsl(30, 54%, 90%); */
+    width: 100%;
+}
+
+.table span:nth-of-type(even) {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.table div {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 670px) {
+    .main {
+        margin: 0;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .text,
+    h3,
+    strong {
+        font-size: 12px;
+    }
 }
