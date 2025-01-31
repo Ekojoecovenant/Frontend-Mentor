@@ -31,7 +31,8 @@ body {
 }
 
 .main {
-    width: 1100px;
+    max-width: 90%;
+    width: 1200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: hsl(244, 38%, 16%);
@@ -49,6 +50,7 @@ img {
 .img {
     grid-column: 2/3;
     position: relative;
+
 }
 
 .img2 picture {
@@ -57,9 +59,7 @@ img {
 
 .img2 {
     background-color: rgba(112, 3, 180, 0.4);
-    border-radius: 10px;
     width: 100%;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -78,6 +78,43 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 70px;
+    padding: 50px 70px;
+    font-weight: 700;
 
 }
+
+.text-content>h2 {
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+.text-content>h2 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.text-content p {
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.info div {
+    margin-top: 50px;
+}
+
+
+
+.info div p {
+    font-family: 'Lexend Deca';
+    text-transform: uppercase;
+    line-height: 10px;
+}
+
+@media (max-width: 768px) {}
